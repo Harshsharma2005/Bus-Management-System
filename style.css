@@ -1,0 +1,50 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: yellow;
+}
+
+.dark-mode {
+    --bg-color: #222;
+    --text-color: white;
+    --primary-color: #ffa500;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    background: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    text-align: center;
+}

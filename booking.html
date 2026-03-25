@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <button id="modeToggle">🌙</button>
+    <h1>Bus Booking</h1>
+    <form id="bookingForm">
+        <label for="busNumber">Select Bus:</label>
+        <select id="busNumber">
+            <option value="1234">1234 - College to City Center</option>
+            <option value="5678">5678 - University to Downtown</option>
+        </select>
+        <input type="text" id="studentName" placeholder="Your Name" required>
+        <button type="submit">Book Seat</button>
+    </form>
+    <div id="bookingMessage"></div>
+</body>
+</html>
